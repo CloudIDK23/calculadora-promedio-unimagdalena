@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Calculadora de Promedio UNIMAGDALENA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/home/fabio/Documentos/Calculadora Promedio UNIMAGDALENA/logo-unimag-pequeño.png">
+</head>
+<body>
+
+    <div class="fotos-pagina">
+      <img src="Escudo_unimag_sm.png" width="150px" alt="">
+    </div>
+
+    <div class="nav">
+    <button id="boton_semestral">Promedio Semestral</button>
+    <button id="boton_ponderado">Promedio Ponderado</button>
+    </div>
+
+    <div class="container hidden" id="seccion_semestral">
+        <h1>Calculadora de Promedio Semestral</h1>
+
+        <div class="card">
+            <label for="numero_materias">¿Cuántas materias cursaste?</label>
+            <input type="number" id="numero_materias" min="1" placeholder="Ejemplo: 6">
+            <button id="crear_casillas">Crear Casillas</button>
+        </div>
+
+        <form id="formula_materias" class="hidden">
+            <h2>Ingrese su calificación y los creditos de la materia</h2>
+            <div id="casillas"></div>
+
+            <button type="submit">Calcular Promedio</button>
+        </form>
+
+        <div id="resultado" class="resultado hidden"></div>
+
+
+    </div>
+
+     <div class="container hidden" id="seccion_ponderado">
+        <h1>Calculadora de Promedio Ponderado</h1>
+
+        <div class="card">
+            <label for="numero_semestres">¿Cuántos semestres has cursado?</label>
+            <input type="number" id="numero_semestres" min="1" placeholder="Ejemplo: 3">
+            <button id="crear_casillas_ponderado">Crear Casillas</button>
+        </div>
+
+        <form id="formula_ponderado" class="hidden">
+            <h2>Ingrese promedio y créditos por semestre</h2>
+
+            <div id="casillas_ponderado"></div>
+
+            <button type="submit">Calcular Promedio Ponderado</button>
+        </form>
+
+        <div id="resultado_ponderado" class="resultado hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

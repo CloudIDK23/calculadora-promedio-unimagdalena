@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #e8f0ff;
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+    background-image: url('/home/fabio/Documentos/Calculadora Promedio UNIMAGDALENA/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+
+.fotos-pagina{
+    text-align: justify;
+}
+
+
+.container {
+    max-width: 550px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    border-radius: 28px;
+    border-left: 8px solid #002f87;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.fila {
+    display: flex;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.fila input {
+    flex: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    background: #e8ffe8;
+    border-left: 5px solid #4CAF50;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav button {
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    width: auto;    
+    white-space: nowrap;
+}
